@@ -49,13 +49,13 @@ int main() {
 				break;
 			}
 			case 2:
-				arbol.imprimeInOrder();
+				arbol.printInOrder();
 				break;
 			case 3:
-				//arbol.imprimePreOrder();
+				arbol.printPreOrder();
 				break;
 			case 4:
-				//arbol.imprimePostOrder();
+				arbol.printPostOrder();
 				break;
 		    case 5:
 				//arbol.borrarArbol();

@@ -25,8 +25,20 @@ public:
         return InsertRecursivo(&root,valor);
     }
 
-    void imprimeInOrder(){
+    void printInOrder(){
         PrintRecursivoOrder(root);
+    }
+
+    void printPreOrder(){
+        PrintRecursivoPre(root);
+    }
+
+    void printPostOrder(){
+        PrintRecursivoPost(root);
+    }
+
+    void borrarNodo(int dato){
+        borrarNodoRecursivo(root,dato);
     }
 
     //bool Search(int valor){
@@ -58,5 +70,38 @@ private:
         PrintRecursivoOrder(ptr->left);
         cout << ptr->dato << " ";
         PrintRecursivoOrder(ptr->right);
+    }
+
+    void PrintRecursivoPre(Node *&ptr){
+        if (ptr == nullptr){
+            return;
+        }
+        cout << ptr->dato << " ";
+        PrintRecursivoPre(ptr->left);
+        PrintRecursivoPre(ptr->right);
+    }
+
+    void PrintRecursivoPost(Node *&ptr){
+        if (ptr == nullptr){
+            return;
+        }
+        PrintRecursivoPost(ptr->left);
+        PrintRecursivoPost(ptr->right);
+        cout << ptr->dato << " ";
+    }
+
+    void borrarNodoRecursivo(Node *&ptr,int dato){
+         if (ptr->left->dato == dato){
+            
+        }
+        if (ptr == nullptr){
+            return;
+        }
+        borrarNodoRecursivo(ptr->left, dato);
+        borrarNodoRecursivo(ptr->right, dato);
+    }
+
+    void buscaMinRight(Node *&ptr){
+
     }
 };
