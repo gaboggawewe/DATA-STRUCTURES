@@ -91,17 +91,70 @@ private:
     }
 
     void borrarNodoRecursivo(Node *&ptr,int dato){
-         if (ptr->left->dato == dato){
-            
-        }
-        if (ptr == nullptr){
+         if (!ptr){
             return;
         }
-        borrarNodoRecursivo(ptr->left, dato);
-        borrarNodoRecursivo(ptr->right, dato);
+        if (dato < ptr->dato){
+            borrarNodoRecursivo(ptr->left, dato);
+
+        }
+        else if (dato > ptr->dato){
+            borrarNodoRecursivo(ptr->right, dato);
+
+        }
+        else{
+            if (!ptr->left && !ptr->right){
+                delete ptr;
+                ptr = nullptr;
+            }
+            else if (!ptr->left){
+                Node* tmp = ptr;
+                ptr = ptr->right;
+                delete tmp;
+            }
+            else if (!ptr->right){
+                Node* tmp = ptr;
+                ptr = ptr->left;
+                delete tmp;
+            }
+            else{
+                int sustituto = buscaMinRight(ptr->right);
+                ptr->dato = sustituto;
+                delete ptr;
+                ptr = nullptr; 
+            }
+        }
     }
 
-    void buscaMinRight(Node *&ptr){
+    int buscaMinRight(Node *&nodo){
+        int minR = nodo->dato;
+        Node* temp;
+        while (nodo->right != nullptr)
+        {
+            temp = nodo;
+            minR = nodo->right->dato;
+            nodo = nodo->right;
+        }
+        if (nodo->left){
+            temp->right = nodo->left;
+        }
+        delete nodo;
+        return minR;
+    }
 
+    int buscaMinLeft(Node *&nodo){
+        int minL = nodo->dato;
+        Node* temp;
+        while (nodo->left != nullptr)
+        {
+            temp = nodo;
+            minL = nodo->left->dato;
+            nodo = nodo->left;
+        }
+        if (nodo->right){
+            temp->left = nodo->right;
+        }
+        delete nodo;
+        return minL;
     }
 };

@@ -5,6 +5,8 @@
 using namespace std;
 
 #define OPCION_SALIDA	0
+int valor = 0;
+
 
 int main() {
 	int 				option = 0;
@@ -17,6 +19,7 @@ int main() {
 		cout << "3) Imprimir Pre Order" << endl;
 		cout << "4) Imprimir Post Order" << endl;
 		cout << "5) Borrar Todo" << endl << endl;
+		cout << "6) Borrar elemento" <<endl;
 		
 		cout << "0) Salir" << endl;
 
@@ -59,6 +62,11 @@ int main() {
 				break;
 		    case 5:
 				//arbol.borrarArbol();
+				break;
+			case 6:
+				cout << "Ingrese el dato que desea eliminar" << endl;
+				cin>>valor;
+				arbol.borrarNodo(valor);
 				break;
 			case OPCION_SALIDA:
 				break;

@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\calabozo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|solutionrelative:Situacion problema\\calabozo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\cuarto.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|solutionrelative:Situacion problema\\cuarto.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\mounstro.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|solutionrelative:Situacion problema\\mounstro.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -15,16 +23,8 @@
       "RelativeMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|solutionrelative:Situacion problema\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\calabozo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|solutionrelative:Situacion problema\\calabozo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\catalogo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|solutionrelative:Situacion problema\\catalogo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\cuarto.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|solutionrelative:Situacion problema\\cuarto.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\jugador.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -38,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,26 +50,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "cuarto.h",
               "DocumentMoniker": "C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\cuarto.h",
               "RelativeDocumentMoniker": "Situacion problema\\cuarto.h",
               "ToolTip": "C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\cuarto.h",
               "RelativeToolTip": "Situacion problema\\cuarto.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-14T03:39:07.881Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T03:39:07.881Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "calabozo.h",
               "DocumentMoniker": "C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\calabozo.h",
               "RelativeDocumentMoniker": "Situacion problema\\calabozo.h",
               "ToolTip": "C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\calabozo.h",
               "RelativeToolTip": "Situacion problema\\calabozo.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAAAAgAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-10-14T03:38:59.39Z",
               "EditorCaption": ""
@@ -84,12 +83,11 @@
               "RelativeToolTip": "Situacion problema\\jugador.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-14T03:38:45.297Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T03:38:45.297Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "catalogo.h",
               "DocumentMoniker": "C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\catalogo.h",
               "RelativeDocumentMoniker": "Situacion problema\\catalogo.h",
@@ -97,12 +95,11 @@
               "RelativeToolTip": "Situacion problema\\catalogo.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-14T03:38:37.874Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T03:38:37.874Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "mounstro.h",
               "DocumentMoniker": "C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\mounstro.h",
               "RelativeDocumentMoniker": "Situacion problema\\mounstro.h",
@@ -110,12 +107,11 @@
               "RelativeToolTip": "Situacion problema\\mounstro.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-14T03:37:59.568Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T03:37:59.568Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "mounstro.cpp",
               "DocumentMoniker": "C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\mounstro.cpp",
               "RelativeDocumentMoniker": "Situacion problema\\mounstro.cpp",
@@ -123,12 +119,11 @@
               "RelativeToolTip": "Situacion problema\\mounstro.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-14T03:37:45.327Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T03:37:45.327Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\main.cpp",
               "RelativeDocumentMoniker": "Situacion problema\\main.cpp",
@@ -136,8 +131,7 @@
               "RelativeToolTip": "Situacion problema\\main.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-14T03:36:40.162Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T03:36:40.162Z"
             }
           ]
         }
