@@ -23,6 +23,10 @@ public:
         root = nullptr;
     }
 
+    ~ArbolBinario() {
+        borraRecursivo(root);
+    }
+
     bool inserta(T valor){
         return InsertRecursivo(&root,valor);
     }
@@ -44,8 +48,9 @@ public:
     }
 
     bool borrarArbol(){
-        borraRecursivo(&root);
-        return (&root);
+        borraRecursivo(root);
+        root = nullptr;
+        return (root = nullptr);
     }
 
     T* obtainSelection(unsigned int seleccion) {
@@ -66,12 +71,6 @@ public:
         int totalNodos = contarNodosRecursivo(root);
         return totalNodos;
     }
-
-
-
-
-
-
 
 
 
@@ -188,12 +187,12 @@ private:
         return minL;
     }
 
-    void borraRecursivo(ArbolBinario<T> **nodo){
-        if(*nodo==nullptr){
+    void borraRecursivo(Node<T> *&nodo){
+        if(nodo==nullptr){
             return;
         }
-        borraRecursivo(&(*nodo)->left);
-        borraRecursivo(&(*nodo)->right);
+        borraRecursivo(nodo->left);
+        borraRecursivo(nodo->right);
         delete nodo;
         nodo=nullptr;
     }
