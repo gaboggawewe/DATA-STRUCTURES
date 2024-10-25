@@ -1,27 +1,29 @@
 #include <iostream>
 using namespace std;
 
+template <typename T>
 class Node{
 public:
-    int dato;
-    Node* right;
-    Node* left;
-    Node(int valor){
+    T dato;
+    Node<T>* right;
+    Node<T>* left;
+    Node(T valor){
         dato = valor;
         right = nullptr;
         left = nullptr;
     }
 };
 
+template <typename T>
 class ArbolBinario{
 private:
-    Node* root;
+    Node<T>* root;
 public:
     ArbolBinario(){
         root = nullptr;
     }
 
-    bool inserta(int valor){
+    bool inserta(T valor){
         return InsertRecursivo(&root,valor);
     }
 
@@ -41,14 +43,14 @@ public:
         borrarNodoRecursivo(root,dato);
     }
 
-    //bool Search(int valor){
-        
-    //}
+    bool borrarArbol(){
+        return (&root);
+    }
 
 private:
-    bool InsertRecursivo(Node **ptr, int valor){
+    bool InsertRecursivo(Node<T> **ptr, T valor){
         if (!*ptr){
-            *ptr = new(nothrow) Node(valor);
+            *ptr = new(nothrow) Node<T>(valor);
             if (!*ptr){
                 return false;
             }
@@ -63,7 +65,7 @@ private:
         return false;
     }
 
-    void PrintRecursivoOrder(Node *&ptr){
+    void PrintRecursivoOrder(Node<T> *&ptr){
         if (ptr == nullptr){
             return;
         }
@@ -72,7 +74,7 @@ private:
         PrintRecursivoOrder(ptr->right);
     }
 
-    void PrintRecursivoPre(Node *&ptr){
+    void PrintRecursivoPre(Node<T> *&ptr){
         if (ptr == nullptr){
             return;
         }
@@ -81,7 +83,7 @@ private:
         PrintRecursivoPre(ptr->right);
     }
 
-    void PrintRecursivoPost(Node *&ptr){
+    void PrintRecursivoPost(Node<T> *&ptr){
         if (ptr == nullptr){
             return;
         }
@@ -90,17 +92,15 @@ private:
         cout << ptr->dato << " ";
     }
 
-    void borrarNodoRecursivo(Node *&ptr,int dato){
+    void borrarNodoRecursivo(Node<T> *&ptr, T dato){
          if (!ptr){
             return;
         }
         if (dato < ptr->dato){
             borrarNodoRecursivo(ptr->left, dato);
-
         }
         else if (dato > ptr->dato){
             borrarNodoRecursivo(ptr->right, dato);
-
         }
         else{
             if (!ptr->left && !ptr->right){
@@ -108,27 +108,25 @@ private:
                 ptr = nullptr;
             }
             else if (!ptr->left){
-                Node* tmp = ptr;
+                Node<T>* tmp = ptr;
                 ptr = ptr->right;
                 delete tmp;
             }
             else if (!ptr->right){
-                Node* tmp = ptr;
+                Node<T>* tmp = ptr;
                 ptr = ptr->left;
                 delete tmp;
             }
             else{
-                int sustituto = buscaMinRight(ptr->right);
-                ptr->dato = sustituto;
-                delete ptr;
-                ptr = nullptr; 
+                T sustituto = buscaMinRight(ptr->right);
+                ptr->dato = sustituto; 
             }
         }
     }
 
-    int buscaMinRight(Node *&nodo){
+    int buscaMinRight(Node<T> *&nodo){
         int minR = nodo->dato;
-        Node* temp;
+        Node<T>* temp;
         while (nodo->right != nullptr)
         {
             temp = nodo;
@@ -142,9 +140,9 @@ private:
         return minR;
     }
 
-    int buscaMinLeft(Node *&nodo){
+    int buscaMinLeft(Node<T> *&nodo){
         int minL = nodo->dato;
-        Node* temp;
+        Node<T>* temp;
         while (nodo->left != nullptr)
         {
             temp = nodo;
@@ -157,4 +155,15 @@ private:
         delete nodo;
         return minL;
     }
+
+    void borraRecursivo(ArbolBinario<T> **nodo){
+        if(*nodo==nullptr){
+            return;
+        }
+        borraRecursivo(&(*nodo)->left);
+        borraRecursivo(&(*nodo)->right);
+        delete nodo;
+        nodo=nullptr;
+    }
+
 };

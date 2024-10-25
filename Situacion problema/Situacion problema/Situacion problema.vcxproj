@@ -127,15 +127,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="dungeon.cpp" />
+    <ClCompile Include="catalogue.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="mounstro.cpp" />
+    <ClCompile Include="monster.cpp" />
+    <ClCompile Include="player.cpp" />
+    <ClCompile Include="room.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="calabozo.h" />
-    <ClInclude Include="catalogo.h" />
-    <ClInclude Include="cuarto.h" />
-    <ClInclude Include="jugador.h" />
-    <ClInclude Include="mounstro.h" />
+    <ClInclude Include="arbolbinario.h" />
+    <ClInclude Include="dungeon.h" />
+    <ClInclude Include="catalogue.h" />
+    <ClInclude Include="room.h" />
+    <ClInclude Include="player.h" />
+    <ClInclude Include="monster.h" />
+    <ClInclude Include="template_doble_ligadas.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

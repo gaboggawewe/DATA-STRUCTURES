@@ -10,7 +10,7 @@ int valor = 0;
 
 int main() {
 	int 				option = 0;
-	ArbolBinario arbol;
+	ArbolBinario<int> arbol;
 
 	do {
 		cout << "Elije una opcion:" << endl;
@@ -61,7 +61,7 @@ int main() {
 				arbol.printPostOrder();
 				break;
 		    case 5:
-				//arbol.borrarArbol();
+				arbol.borrarArbol();
 				break;
 			case 6:
 				cout << "Ingrese el dato que desea eliminar" << endl;
