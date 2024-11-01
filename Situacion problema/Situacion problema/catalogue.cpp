@@ -61,7 +61,11 @@ bool Catalogue::loadFromCSV(const string& fileName) {
             file.close();
             return false;
         }
-        tree.inserta(nMonster);
+        if(!tree.inserta(nMonster)){
+            cerr << "No se pudo agregar el mounstro a la lista, no hay memoria" << endl;
+            file.close();
+            return false;
+        }
     }
     file.close();
     return true;
