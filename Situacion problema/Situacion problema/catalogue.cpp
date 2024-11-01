@@ -32,7 +32,7 @@ bool Catalogue::loadFromCSV(const string& fileName) {
                 nMonster.setName(cell);
                 break;
             case 1:
-                nMonster.setCr(stof(cell)); // Convertir string a float
+                nMonster.setCr(stof(cell));
                 break;
             case 2:
                 nMonster.setType(cell);
@@ -41,10 +41,10 @@ bool Catalogue::loadFromCSV(const string& fileName) {
                 nMonster.setSize(cell);
                 break;
             case 4:
-                nMonster.setArmor(stoi(cell)); // Convertir string a int
+                nMonster.setArmor(stoi(cell));
                 break;
             case 5:
-                nMonster.setHp(stoi(cell)); // Convertir string a int
+                nMonster.setHp(stoi(cell));
                 break;
             case 6:
                 nMonster.setAlign(cell);
@@ -70,7 +70,7 @@ bool Catalogue::loadFromCSV(const string& fileName) {
 Monster* Catalogue::aleatorio() {
     int total_monsters = tree.contarNodos();
     if (total_monsters == 0) {
-        throw std::out_of_range("El árbol está vacío");
+        throw std::out_of_range("El ï¿½rbol estï¿½ vacï¿½o");
     }
     int random = rand() % total_monsters + 1;
     Monster* selected_monster;
