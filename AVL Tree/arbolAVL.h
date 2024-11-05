@@ -5,6 +5,7 @@ template <typename T>
 class Node{
 public:
     T dato;
+    int altura;
     Node<T>* right;
     Node<T>* left;
     Node(T valor){
@@ -15,11 +16,11 @@ public:
 };
 
 template <typename T>
-class ArbolBinario{
+class ArbolAVL{
 private:
     Node<T>* root;
 public:
-    ArbolBinario(){
+    ArbolAVL(){
         root = nullptr;
     }
 
@@ -47,23 +48,111 @@ public:
         return (&root);
     }
 
+    int getAltura(Node<T>* ptr){
+        if(!ptr){
+            return -1;
+        }
+        return ptr->altura;
+    }
+
+    int revisaBalance(Node<T>* ptr){
+        if(!ptr){
+            return -1;
+        }
+        return getAltura(ptr->left) - getAltura(ptr->right);
+    }
+
+    void calculaAltura(Node<T>* ptr){
+        if(ptr){
+            ptr->altura = 1 + max(getAltura(ptr->left),getAltura(ptr->right));
+        }
+    }
+
+    void balancea(Node<T> *&ptr){
+        int balance = revisaBalance(ptr);
+        if (balance > 1){
+            int FE_left = revisaBalance(ptr->left);
+            if (FE_left >= 0){
+                ptr = rotacionDerecha(ptr);
+            }
+            else{
+                ptr = rotacionDobleDerecha(ptr);
+            }
+        }
+        if (balance < -1){
+            int FE_right = revisaBalance(ptr->right); 
+            if (FE_right <= 0){
+                ptr = rotacionIzquierda(ptr);
+            }
+            else{
+                ptr = rotacionDobleIzquierda(ptr);
+            }
+        }
+    }
+
+    Node<T>* rotacionDerecha(Node<T>* ptr){
+        Node<T>* nuevoRaiz,* tmp;
+        nuevoRaiz = ptr->left;
+        tmp = ptr->left->right;
+        nuevoRaiz->right = ptr;
+        ptr->left = tmp;
+        
+        calculaAltura(ptr);
+        calculaAltura(nuevoRaiz);
+
+        return nuevoRaiz;
+    }
+
+    Node<T>* rotacionIzquierda(Node<T>* ptr){
+        Node<T>* nuevoRaiz,* tmp;
+        nuevoRaiz = ptr->right;
+        tmp = ptr->right->left;
+        nuevoRaiz->left = ptr;
+        ptr->right = tmp;
+
+        calculaAltura(ptr);
+        calculaAltura(nuevoRaiz);
+
+        return nuevoRaiz;
+    }
+
+    Node<T>* rotacionDobleDerecha(Node<T>* ptr){
+        ptr->left = (rotacionIzquierda(ptr->left));
+        return rotacionDerecha(ptr);
+    }
+
+    Node<T>* rotacionDobleIzquierda(Node<T>* nodo){
+        ptr->right = (rotacionDerecha(ptr->right));
+        return rotacionIzquierda(ptr);
+    }
+
+
 private:
     bool InsertRecursivo(Node<T> **ptr, T valor){
         if (!*ptr){
             *ptr = new(nothrow) Node<T>(valor);
+            calculaAltura(*ptr);
             if (!*ptr){
                 return false;
             }
             return true;
         }
         if (valor < (*ptr)->dato){
-            return InsertRecursivo(&(*ptr)->left, valor);
+            if(InsertRecursivo(&(*ptr)->left, valor)){
+                calculaAltura(*ptr);
+                balancea(*ptr);
+                return true;
+            }
         }
         if (valor > (*ptr)->dato){
-            return InsertRecursivo(&(*ptr)->right, valor);
+            if (InsertRecursivo(&(*ptr)->right, valor)){
+                balancea(*ptr);
+                return true;
+            }
         }
         return false;
     }
+
 
     void PrintRecursivoOrder(Node<T> *&ptr){
         if (ptr == nullptr){
@@ -156,7 +245,7 @@ private:
         return minL;
     }
 
-    void borraRecursivo(ArbolBinario<T> **nodo){
+    void borraRecursivo(ArbolAVL<T> **nodo){
         if(*nodo==nullptr){
             return;
         }
