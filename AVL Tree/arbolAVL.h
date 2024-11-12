@@ -211,6 +211,10 @@ private:
                 ptr->dato = sustituto; 
             }
         }
+        if(ptr){
+            calculaAltura(ptr);
+            
+        }
     }
 
     int buscaMinRight(Node<T> *&nodo){
