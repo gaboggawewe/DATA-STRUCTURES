@@ -1,13 +1,12 @@
 #pragma once
 #include <iostream>
-#include "templates/template_doble_ligadas.h"
+#include "templates/graphos.h"
 #include "room.h"
 using namespace std;
 
 class Dungeon {
 private:
-	Double_list<Room> lista;
-
+	Graph<Room> graph;
 public:
 
 	Dungeon() {
@@ -16,7 +15,11 @@ public:
 	~Dungeon() {
 	}
 
-	bool createRoom(Monster monster);
+	unsigned int getSize();
+
+	bool createDungeon(string filename);
+
+	bool createRoom(unsigned int vertex, Monster monster);
 
 	void print();
 };

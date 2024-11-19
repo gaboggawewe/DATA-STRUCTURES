@@ -3,12 +3,12 @@
 using namespace std;
 
 template <typename T>
-class NodeDoble {
+class Node_DL {
 public:
 	T dato;
-	NodeDoble<T>* previous;
-	NodeDoble<T>* next;
-	NodeDoble(T info) {
+	Node_DL<T>* previous;
+	Node_DL<T>* next;
+	Node_DL(T info) {
 		dato = info;
 		next = nullptr;
 		previous = nullptr;
@@ -18,8 +18,8 @@ public:
 template <typename T>
 class Double_list {
 private:
-	NodeDoble<T>* head;
-	NodeDoble<T>* tail;
+	Node_DL<T>* head;
+	Node_DL<T>* tail;
 public:
 	Double_list() {
 		head = nullptr;
@@ -30,7 +30,7 @@ public:
 	}
 
 	void printListaBeg() {
-		NodeDoble<T>* tmp = head;
+		Node_DL<T>* tmp = head;
 		while (tmp) {
 			cout << tmp->dato << " ";
 			tmp = tmp->next;
@@ -39,7 +39,7 @@ public:
 	}
 
 	void printListaEnd() {
-		NodeDoble<T>* tmp = tail;
+		Node_DL<T>* tmp = tail;
 		while (tmp) {
 			cout << tmp->dato << " ";
 			tmp = tmp->previous;
@@ -48,8 +48,8 @@ public:
 	}
 
 	bool insertarFinal(T dato) {
-		NodeDoble<T>* tmp = nullptr, * nuevo = nullptr;
-		nuevo = new(nothrow) NodeDoble<T>(dato);
+		Node_DL<T>* tmp = nullptr, * nuevo = nullptr;
+		nuevo = new(nothrow) Node_DL<T>(dato);
 		if (!nuevo) {
 			return false;
 		}
@@ -65,50 +65,9 @@ public:
 		return true;
 	}
 
-	bool insertInOrder(T value) {
-		NodeDoble<T>* newNode = nullptr;
-		newNode = new (nothrow) NodeDoble<T>(value);
-
-		if (!newNode) {
-			return false;
-		}
-
-		newNode->next = nullptr;
-
-		if (!head) {
-			head = tail = newNode;
-			return true;
-		}
-
-		if (value < head->dato) {
-			newNode->next = head;
-			head->previous = newNode;
-			head = newNode;
-			return true;
-		}
-
-		NodeDoble<T>* current = head;
-		while (current->next && current->next->dato < value) {
-			current = current->next;
-		}
-
-		newNode->next = current->next;
-		newNode->previous = current;
-
-		if (current->next) {
-			current->next->previous = newNode;
-		}
-		else {
-			tail = newNode;
-		}
-
-		current->next = newNode;
-		return true;
-	}
-
 	bool insertarInicio(T dato) {
-		NodeDoble<T>* tmp = nullptr, * nuevo = nullptr;
-		nuevo = new(nothrow) NodeDoble<T>(dato);
+		Node_DL<T>* tmp = nullptr, * nuevo = nullptr;
+		nuevo = new(nothrow) Node_DL<T>(dato);
 		if (!nuevo) {
 			return false;
 		}
@@ -125,14 +84,55 @@ public:
 	}
 
 	void deleteLista() {
-		NodeDoble<T>* actual = head;
+		Node_DL<T>* actual = head;
 		while (actual) {
-			NodeDoble<T>* temp = actual->next;
+			Node_DL<T>* temp = actual->next;
 			delete actual;
 			actual = temp;
 		}
 		head = nullptr;
 		tail = nullptr;
 	}
+	
+	bool busqueda(T dato) {
+        Node_DL<T>* tmp = head;
+        while (tmp) {
+            if (tmp->dato == dato) {
+                return true;
+            }
+            tmp = tmp->next;
+        }
+        return false;
+    }
+
+	bool borrarElemento(T dato) {
+        Node_DL<T>* tmp = head;
+        while (tmp) {
+            if (tmp->dato == dato) {
+                if (tmp->previous) {
+                    tmp->previous->next = tmp->next;
+                } else {
+                    head = tmp->next;
+                }
+                if (tmp->next) {
+                    tmp->next->previous = tmp->previous;
+                } else {
+                    tail = tmp->previous;
+                }
+                delete tmp;
+                return true;
+            }
+            tmp = tmp->next;
+        }
+        return false;
+    }
+
+	Node_DL<T>* begin() {
+        return head;
+    }
+
+    Node_DL<T>* end() {
+        return nullptr;
+    }
 
 };

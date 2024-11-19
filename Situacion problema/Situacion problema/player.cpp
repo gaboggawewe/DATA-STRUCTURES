@@ -1,7 +1,7 @@
 #include "player.h"
 
 bool Player::insertDerrotado(Monster* mounstro) {
-	return (mounstrosDerrotados.insertInOrder(*mounstro));
+	return (mounstrosDerrotados.insertarInicio(*mounstro));
 }
 
 void Player::print() {

@@ -66,6 +66,6 @@ bool Monster::operator>(const Monster& other) const {
 }
 
 ostream& operator<<(ostream& os, const Monster& monster) {
-    os << "Name: " << monster.name << endl;
+    os << "Name: " << monster.name;
     return os;
 }
