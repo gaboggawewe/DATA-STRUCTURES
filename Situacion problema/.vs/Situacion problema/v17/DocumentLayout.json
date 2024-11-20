@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|solutionrelative:Situacion problema\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\dungeon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|solutionrelative:Situacion problema\\dungeon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\dungeon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|solutionrelative:Situacion problema\\dungeon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|solutionrelative:Situacion problema\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\templates\\graphos.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|solutionrelative:Situacion problema\\templates\\graphos.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\dungeon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|solutionrelative:Situacion problema\\dungeon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\templates\\template_doble_ligadas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -69,21 +69,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\main.cpp",
               "RelativeDocumentMoniker": "Situacion problema\\main.cpp",
               "ToolTip": "C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\main.cpp",
               "RelativeToolTip": "Situacion problema\\main.cpp",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAcAAAATAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACIAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-14T03:36:40.162Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -95,26 +94,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "graphos.h",
               "DocumentMoniker": "C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\templates\\graphos.h",
               "RelativeDocumentMoniker": "Situacion problema\\templates\\graphos.h",
               "ToolTip": "C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\templates\\graphos.h",
               "RelativeToolTip": "Situacion problema\\templates\\graphos.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAKAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-11-19T17:14:08.595Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T17:14:08.595Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "dungeon.cpp",
               "DocumentMoniker": "C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\dungeon.cpp",
               "RelativeDocumentMoniker": "Situacion problema\\dungeon.cpp",
               "ToolTip": "C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\dungeon.cpp",
               "RelativeToolTip": "Situacion problema\\dungeon.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-23T15:35:23.572Z",
               "EditorCaption": ""
@@ -129,8 +127,7 @@
               "RelativeToolTip": "Situacion problema\\templates\\template_doble_ligadas.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-23T14:42:46.988Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T14:42:46.988Z"
             },
             {
               "$type": "Document",
@@ -154,8 +151,7 @@
               "RelativeToolTip": "Situacion problema\\monster.h",
               "ViewState": "AQIAADoAAAAAAAAAAAAAACEAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-14T03:37:59.568Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T03:37:59.568Z"
             },
             {
               "$type": "Document",
@@ -167,21 +163,19 @@
               "RelativeToolTip": "Situacion problema\\monster.cpp",
               "ViewState": "AQIAADQAAAAAAAAAAAAAAEEAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-14T03:37:45.327Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T03:37:45.327Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "dungeon.h",
               "DocumentMoniker": "C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\dungeon.h",
               "RelativeDocumentMoniker": "Situacion problema\\dungeon.h",
               "ToolTip": "C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\dungeon.h",
               "RelativeToolTip": "Situacion problema\\dungeon.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAANAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-14T03:38:59.39Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T03:38:59.39Z"
             },
             {
               "$type": "Document",
@@ -193,8 +187,7 @@
               "RelativeToolTip": "Situacion problema\\catalogue.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-14T03:38:37.874Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-14T03:38:37.874Z"
             },
             {
               "$type": "Document",

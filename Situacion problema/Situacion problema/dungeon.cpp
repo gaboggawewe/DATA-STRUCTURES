@@ -2,9 +2,9 @@
 
 
 void Dungeon::print() {
-	cout << "El calabozo cuenta con los siguientes cuartos: " << endl;
+	cout << "El calabozo cuenta con los siguientes cuartos: " << endl << endl;
 	for (unsigned int i = 0; i < graph.getSize(); i++) {
-		cout << "Cuarto " << i << " con monstruo: " << graph.getVertexData(i);
+		cout << "Cuarto " << i << " " << graph.getVertexData(i);
 		cout << " Conexiones: ";
 		graph.printEdges(i);
 		cout << endl;

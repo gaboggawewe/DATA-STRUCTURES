@@ -172,6 +172,7 @@ public:
         file.close();
         return true;
     }
+
     void DFS_recursive(unsigned int vertex) {
         graph[vertex].visited = true;
         cout << vertex << " ";

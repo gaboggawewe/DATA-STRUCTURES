@@ -3,6 +3,7 @@
 #include <string>
 #include <sstream>
 #include "templates/template_doble_ligadas.h"
+#include "Queue.h"
 
 using namespace std;
 
@@ -183,6 +184,11 @@ public:
             }
             actual = actual->next;
         }
+    }
+
+    void BFS(unsigned int origin, unsigned int destination){
+        Queue queue;
+        queue.enqueue(graph[origin].edges)
     }
 
     unsigned int getSize() {

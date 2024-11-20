@@ -7,7 +7,7 @@ main.o: main.cpp catalogue.h dungeon.h monster.h room.h player.h templates/arbol
 catalogue.o: catalogue.cpp catalogue.h templates/arbolbinario.h templates/template_doble_ligadas.h monsters.csv
 	g++ -c catalogue.cpp
 
-dungeon.o: dungeon.cpp graphos.h dungeon.h templates/arbolbinario.h templates/template_doble_ligadas.h monsters.csv
+dungeon.o: dungeon.cpp templates/graphos.h dungeon.h templates/arbolbinario.h templates/template_doble_ligadas.h monsters.csv
 	g++ -c dungeon.cpp
 
 monster.o: monster.cpp monster.h templates/arbolbinario.h templates/template_doble_ligadas.h monsters.csv
