@@ -3,7 +3,6 @@
 bool Catalogue::loadFromCSV(const string& fileName) {
     ifstream        file(fileName);
     string          line;
-    unsigned int    size = 0;
 
     if (!file.is_open()) {
         cerr << "Error al abrir el archivo: " << fileName << endl;

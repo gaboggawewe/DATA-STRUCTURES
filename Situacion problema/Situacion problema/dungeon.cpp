@@ -20,13 +20,18 @@ unsigned int Dungeon::getSize() {
 
 bool Dungeon::createRoom(unsigned int vertex,Monster monster) {
 	Room cuarto(monster);
-	graph.setVertex(vertex,cuarto);
+	if (!graph.setVertex(vertex, cuarto)) {
+		return false;
+	}
 	return true;
 }
 
 bool Dungeon::obtainRoute(unsigned int origin, unsigned int destination) {
 	path.deleteLista();
-	graph.BFS_path(origin, destination, path);
+	if (!graph.BFS_path(origin, destination, path)) {
+		cout << "No se encontro una ruta." << endl;
+		return false;
+	}
 	act = path.begin();
 	return true;
 }

@@ -54,7 +54,7 @@ public:
     }
 
     T* obtainSelection(unsigned int seleccion) {
-        int contador = 0;
+        unsigned int contador = 0;
         T* resultado;
         bool encontrado = false;
         obtainSelectionRecursive(root, contador, seleccion, resultado, encontrado);
@@ -197,7 +197,7 @@ private:
         nodo=nullptr;
     }
 
-    void obtainSelectionRecursive(Node<T>* nodo, int& contador, unsigned int seleccion, T*& resultado, bool& encontrado) {
+    void obtainSelectionRecursive(Node<T>* nodo, unsigned int& contador, unsigned int seleccion, T*& resultado, bool& encontrado) {
         if (nodo == nullptr || encontrado) {
             return;
         }
