@@ -12,6 +12,7 @@ class Catalogue{
 private:
 
     ArbolBinario<Monster> tree;
+    unsigned int size = 0;
 
 public:
 

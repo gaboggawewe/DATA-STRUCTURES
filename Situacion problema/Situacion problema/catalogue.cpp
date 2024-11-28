@@ -65,17 +65,17 @@ bool Catalogue::loadFromCSV(const string& fileName) {
             file.close();
             return false;
         }
+        size++;
     }
     file.close();
     return true;
 }
 
 Monster* Catalogue::aleatorio() {
-    int total_monsters = tree.contarNodos();
-    if (total_monsters == 0) {
-        throw std::out_of_range("El �rbol est� vac�o");
+    if (size == 0) {
+        throw std::out_of_range("El arbol esta vacio");
     }
-    int random = rand() % total_monsters + 1;
+    int random = rand() % size + 1;
     Monster* selected_monster;
     selected_monster = tree.obtainSelection(random);
     return selected_monster;
