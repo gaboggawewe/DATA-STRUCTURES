@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\templates\\template_doble_ligadas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|solutionrelative:Situacion problema\\templates\\template_doble_ligadas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|solutionrelative:Situacion problema\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\templates\\template_doble_ligadas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{57191D11-965E-47D0-BB98-CDE52F7F2122}|Situacion problema\\Situacion problema.vcxproj|solutionrelative:Situacion problema\\templates\\template_doble_ligadas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,17 +18,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\main.cpp",
               "RelativeDocumentMoniker": "Situacion problema\\main.cpp",
               "ToolTip": "C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\main.cpp",
               "RelativeToolTip": "Situacion problema\\main.cpp",
-              "ViewState": "AQIAABYAAAAAAAAAAAAuwDwAAAAfAAAA",
+              "ViewState": "AQIAADQAAAAAAAAAAAAAAE4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-10-14T03:36:40.162Z",
               "IsPinned": true,
@@ -44,7 +44,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "template_doble_ligadas.h",
               "DocumentMoniker": "C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\templates\\template_doble_ligadas.h",
               "RelativeDocumentMoniker": "Situacion problema\\templates\\template_doble_ligadas.h",

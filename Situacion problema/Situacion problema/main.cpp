@@ -75,6 +75,7 @@ int main() {
     cout << "  AAAAA  RRRR     T    EEEE   M M M   I   O   O\n";
     cout << "  A   A  R  R     T    E      M   M   I   O   O\n";
     cout << "  A   A  R   R    T    EEEEE  M   M  III   OOO\n";
+    cout << endl;
 
     do {
         Room* actual = nullptr;
