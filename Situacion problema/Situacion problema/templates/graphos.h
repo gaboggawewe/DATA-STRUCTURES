@@ -4,7 +4,7 @@
 #include <sstream>
 #include "template_doble_ligadas.h"
 #include "Queue.h"
-#include <limits>
+#include <climits>
 #include "stack.h"
 
 using namespace std;
