@@ -2,8 +2,7 @@
 #include <fstream>
 #include <string>
 #include <sstream>
-#include "templates/template_doble_ligadas.h"
-#include "Queue.h"
+#include "template_doble_ligadas.h"
 
 using namespace std;
 
@@ -173,6 +172,7 @@ public:
         file.close();
         return true;
     }
+
     void DFS_recursive(unsigned int vertex) {
         graph[vertex].visited = true;
         cout << vertex << " ";
@@ -184,11 +184,6 @@ public:
             }
             actual = actual->next;
         }
-    }
-
-    void BFS(unsigned int origin, unsigned int destination){
-        Queue queue;
-        queue.enqueue(graph[origin].edges)
     }
 
     unsigned int getSize() {

@@ -135,13 +135,15 @@
     <ClCompile Include="room.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="arbolbinario.h" />
     <ClInclude Include="dungeon.h" />
     <ClInclude Include="catalogue.h" />
     <ClInclude Include="room.h" />
     <ClInclude Include="player.h" />
     <ClInclude Include="monster.h" />
+    <ClInclude Include="templates\arbolbinario.h" />
     <ClInclude Include="templates\graphos.h" />
+    <ClInclude Include="templates\Queue.h" />
+    <ClInclude Include="templates\stack.h" />
     <ClInclude Include="templates\template_doble_ligadas.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -93,46 +93,79 @@ public:
 		head = nullptr;
 		tail = nullptr;
 	}
-	
+
 	bool busqueda(T dato) {
-        Node_DL<T>* tmp = head;
-        while (tmp) {
-            if (tmp->dato == dato) {
-                return true;
-            }
-            tmp = tmp->next;
-        }
-        return false;
-    }
+		Node_DL<T>* tmp = head;
+		while (tmp) {
+			if (tmp->dato == dato) {
+				return true;
+			}
+			tmp = tmp->next;
+		}
+		return false;
+	}
 
 	bool borrarElemento(T dato) {
-        Node_DL<T>* tmp = head;
-        while (tmp) {
-            if (tmp->dato == dato) {
-                if (tmp->previous) {
-                    tmp->previous->next = tmp->next;
-                } else {
-                    head = tmp->next;
-                }
-                if (tmp->next) {
-                    tmp->next->previous = tmp->previous;
-                } else {
-                    tail = tmp->previous;
-                }
-                delete tmp;
-                return true;
-            }
-            tmp = tmp->next;
-        }
-        return false;
-    }
+		Node_DL<T>* tmp = head;
+		while (tmp) {
+			if (tmp->dato == dato) {
+				if (tmp->previous) {
+					tmp->previous->next = tmp->next;
+				}
+				else {
+					head = tmp->next;
+				}
+				if (tmp->next) {
+					tmp->next->previous = tmp->previous;
+				}
+				else {
+					tail = tmp->previous;
+				}
+				delete tmp;
+				return true;
+			}
+			tmp = tmp->next;
+		}
+		return false;
+	}
 
-	Node_DL<T>* begin() {
-        return head;
-    }
+	class iterator {
+	private:
+		Node_DL<T>* current;
+	public:
+		iterator() {
+			current = nullptr;
+		}
 
-    Node_DL<T>* end() {
-        return nullptr;
-    }
+		iterator(Node_DL<T>* ptr) {
+			current = ptr;
+		}
 
+		T& operator*() {
+			return current->dato;
+		}
+
+		iterator& operator++() {
+			if (current) {
+				current = current->next;
+			}
+			return *this;
+		}
+
+		bool operator==(const iterator& other) const {
+			return current == other.current;
+		}
+
+		bool operator!=(const iterator& other) const {
+			return current != other.current;
+		}
+	};
+
+	iterator begin() {
+		return iterator(head);
+	}
+
+	iterator end() {
+		return iterator(nullptr);
+	}
 };

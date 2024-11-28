@@ -1,2 +1,5 @@
 ﻿  dungeon.cpp
+  main.cpp
+C:\Users\gabog\OneDrive\TEC\TEC\carrera\tercer semestre\ESTRUCTURAS\Situacion problema\Situacion problema\main.cpp(11,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  Generando código...
   Situacion problema.vcxproj -> C:\Users\gabog\OneDrive\TEC\TEC\carrera\tercer semestre\ESTRUCTURAS\Situacion problema\x64\Debug\Situacion problema.exe

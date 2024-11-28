@@ -3,6 +3,9 @@
 #include <string>
 #include <sstream>
 #include "template_doble_ligadas.h"
+#include "Queue.h"
+#include <limits>
+#include "stack.h"
 
 using namespace std;
 
@@ -58,8 +61,8 @@ public:
         return true;
     }
 
-    T getVertexData(unsigned int vertex) {
-        return graph[vertex].data;
+    T* getVertexData(unsigned int vertex) {
+        return &graph[vertex].data;
     }
 
     bool insertEdge(unsigned int origin, unsigned int destination){
@@ -186,6 +189,60 @@ public:
         }
     }
 
+    bool BFS_path(unsigned int origin, unsigned int destination, Double_list<unsigned int>& path) {
+        Queue<unsigned int> queue;
+        Stack<unsigned int> stack;
+        unsigned int actual = 0;
+        unsigned int* previous = new unsigned int[size];
+
+        for (unsigned int i = 0; i < size; ++i) {
+            previous[i] = UINT_MAX;
+        }
+        if (!size || origin >= size || destination >= size) {
+            delete[] previous;
+            return false;
+        }
+        clearVisited();
+
+        if (!queue.Enqueue(origin)) {
+            delete[] previous;
+            return false;
+        }
+        graph[origin].visited = true;
+        while (!queue.is_empty()) {
+            unsigned int vertex = queue.peek();
+            queue.Dequeue();
+            for (auto edge : graph[vertex].edges) {
+                if (!graph[edge].visited) {
+                    if (!queue.Enqueue(edge)) {
+                        delete[] previous;
+                        return false;
+                    }
+                    previous[edge] = vertex;
+                    graph[edge].visited = true;
+                }
+            }
+        }
+
+        if (previous[destination] == UINT_MAX) {
+            delete[] previous;
+            return false;
+        }
+
+        actual = destination;
+
+        while (actual != origin) {
+            path.insertarInicio(actual);
+            actual = previous[actual];
+        }
+        cout << "La ruta es: ";
+        path.printListaBeg();
+        cout << "\n";
+
+        delete[] previous;
+        return true;
+    }
+
     unsigned int getSize() {
         return size;
     }
@@ -202,5 +259,11 @@ private:
             }
         }
         return true;
+    }
+
+    void clearVisited() {
+        for (unsigned int i = 0; i < size; i++) {
+            graph[i].visited = false;
+        }
     }
 };

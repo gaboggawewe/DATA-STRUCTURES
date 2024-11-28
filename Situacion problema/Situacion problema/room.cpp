@@ -3,6 +3,6 @@
 using namespace std;
 
 ostream& operator<<(ostream& os, const Room& room) {
-    os << "Cuarto con: " << room.monster << endl;
+    os << "con: " << room.monster << endl;
     return os;
 }
