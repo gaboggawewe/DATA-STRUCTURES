@@ -55,6 +55,27 @@ int main() {
         return 0;
     }
 
+    cout << "     (\\___/)\n";
+    cout << "     (o   o)\n";
+    cout << "     (  -  )\n";
+    cout << "    /       \\\n";
+    cout << "   /|       |\\\n";
+    cout << "  / |       | \\\n";
+    cout << " *  |_______|  *\n";
+    cout << "    *       *\n";
+    cout << endl;
+    cout << "  BBBBB   III  EEEEE  N   N  VVV   V  EEEEE  N   N  III  DDDD   OOO\n";
+    cout << "  B    B   I   E      NN  N  VVV   V  E      NN  N   I   D   D O   O\n";
+    cout << "  BBBBB    I   EEEE   N N N  VVV   V  EEEE   N N N   I   D   D O   O\n";
+    cout << "  B    B   I   E      N  NN   VVV V   E      N  NN   I   D   D O   O\n";
+    cout << "  BBBBB   III  EEEEE  N   N    VVV    EEEEE  N   N  III  DDDD   OOO\n";
+    cout << "\n";
+    cout << "  AAAAA  RRRR   TTTTT  EEEEE  M   M  III   OOO\n";
+    cout << "  A   A  R   R    T    E      MM MM   I   O   O\n";
+    cout << "  AAAAA  RRRR     T    EEEE   M M M   I   O   O\n";
+    cout << "  A   A  R  R     T    E      M   M   I   O   O\n";
+    cout << "  A   A  R   R    T    EEEEE  M   M  III   OOO\n";
+
     do {
         Room* actual = nullptr;
 
