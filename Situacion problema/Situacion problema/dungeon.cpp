@@ -28,14 +28,12 @@ bool Dungeon::obtainRoute(unsigned int origin, unsigned int destination) {
 	path.deleteLista();
 	graph.BFS_path(origin, destination, path);
 	act = path.begin();
-	cout << endl;
 	return true;
 }
 
 Room* Dungeon::currentRoomRoute() {
 	if (act != path.end()) {
-		unsigned int roomIndex = *act;
-		Room* room = graph.getVertexData(roomIndex);
+		Room* room = graph.getVertexData(*act);
 		return room;
 	}
 	return nullptr;
