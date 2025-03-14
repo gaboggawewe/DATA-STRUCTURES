@@ -1,15 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\ejercicios_recursion",
-    "\\ejercicios_recursion\\invertir numero",
-    "\\EXAMEN",
-    "\\Queue_y_stack",
+    "\\graphos",
+    "\\hashTable",
     "\\recursividad",
-    "\\templatedobleligada",
-    "\\templatefinal",
-    "\\templateligada",
-    "\\Tree"
+    "\\Situacion problema",
+    "\\Situacion problema\\Situacion problema",
+    "\\Situacion problema\\Situacion problema\\templates"
   ],
+  "SelectedNode": "\\Situacion problema\\Situacion problema\\templates\\template_doble_ligadas.h",
   "PreviewInSolutionExplorer": false
 }

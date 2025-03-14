@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Queue_y_stack\\Stack\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Queue_y_stack\\Stack\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\hashTable\\hashTable.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:hashTable\\hashTable.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Queue_y_stack\\Stack\\stack.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Queue_y_stack\\Stack\\stack.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\templates\\template_doble_ligadas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Situacion problema\\Situacion problema\\templates\\template_doble_ligadas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,27 +31,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Queue_y_stack\\Stack\\main.cpp",
-              "RelativeDocumentMoniker": "Queue_y_stack\\Stack\\main.cpp",
-              "ToolTip": "C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Queue_y_stack\\Stack\\main.cpp",
-              "RelativeToolTip": "Queue_y_stack\\Stack\\main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-10-04T17:35:34.476Z",
+              "Title": "hashTable.h",
+              "DocumentMoniker": "C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\hashTable\\hashTable.h",
+              "RelativeDocumentMoniker": "hashTable\\hashTable.h",
+              "ToolTip": "C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\hashTable\\hashTable.h",
+              "RelativeToolTip": "hashTable\\hashTable.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-11-28T21:48:28.953Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "stack.h",
-              "DocumentMoniker": "C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Queue_y_stack\\Stack\\stack.h",
-              "RelativeDocumentMoniker": "Queue_y_stack\\Stack\\stack.h",
-              "ToolTip": "C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Queue_y_stack\\Stack\\stack.h",
-              "RelativeToolTip": "Queue_y_stack\\Stack\\stack.h",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAiwEcAAAAMAAAA",
+              "Title": "template_doble_ligadas.h",
+              "DocumentMoniker": "C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\templates\\template_doble_ligadas.h",
+              "RelativeDocumentMoniker": "Situacion problema\\Situacion problema\\templates\\template_doble_ligadas.h",
+              "ToolTip": "C:\\Users\\gabog\\OneDrive\\TEC\\TEC\\carrera\\tercer semestre\\ESTRUCTURAS\\Situacion problema\\Situacion problema\\templates\\template_doble_ligadas.h",
+              "RelativeToolTip": "Situacion problema\\Situacion problema\\templates\\template_doble_ligadas.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-10-04T17:27:46.851Z"
+              "WhenOpened": "2024-11-28T21:52:01.021Z"
             }
           ]
         }
